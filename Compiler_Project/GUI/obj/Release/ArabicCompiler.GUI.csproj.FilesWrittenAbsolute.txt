@@ -1,0 +1,11 @@
+/workspace/Compiler_Project/GUI/obj/Release/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/workspace/Compiler_Project/GUI/obj/Release/ArabicCompiler.GUI.MainWindow.resources
+/workspace/Compiler_Project/GUI/obj/Release/ArabicCompiler.GUI.CodeEditor.resources
+/workspace/Compiler_Project/GUI/obj/Release/ArabicCompiler.GUI.ParseTreeViewer.resources
+/workspace/Compiler_Project/GUI/obj/Release/ArabicCompiler.GUI.MipsCodeViewer.resources
+/workspace/Compiler_Project/GUI/obj/Release/ArabicCompiler.GUI.Properties.Resources.resources
+/workspace/Compiler_Project/GUI/bin/Release/ArabicCompiler.GUI.exe.config
+/workspace/Compiler_Project/GUI/bin/Release/ArabicCompiler.GUI.exe.mdb
+/workspace/Compiler_Project/GUI/bin/Release/ArabicCompiler.GUI.exe
+/workspace/Compiler_Project/GUI/obj/Release/ArabicCompiler.GUI.exe
+/workspace/Compiler_Project/GUI/obj/Release/ArabicCompiler.GUI.exe.mdb

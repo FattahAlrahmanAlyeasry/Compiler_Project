@@ -48,7 +48,6 @@ namespace ArabicCompiler.GUI
 
             // Set up event handlers
             textBox.TextChanged += TextBox_TextChanged;
-            textBox.VScroll += TextBox_VScroll;
             textBox.KeyDown += TextBox_KeyDown;
 
             // Add controls
@@ -60,14 +59,6 @@ namespace ArabicCompiler.GUI
         }
 
         private void TextBox_TextChanged(object sender, EventArgs e)
-        {
-            if (showLineNumbers)
-            {
-                UpdateLineNumbers();
-            }
-        }
-
-        private void TextBox_VScroll(object sender, EventArgs e)
         {
             if (showLineNumbers)
             {

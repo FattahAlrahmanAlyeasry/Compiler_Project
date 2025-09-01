@@ -47,34 +47,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="MainWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainWindow.Designer.cs">
-      <DependentUpon>MainWindow.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MainWindow.cs" />
     <Compile Include="CodeEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CodeEditor.Designer.cs">
-      <DependentUpon>CodeEditor.cs</DependentUpon>
-      <SubType>UserControl</SubType>
-    </Compile>
+    
     <Compile Include="ParseTreeViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ParseTreeViewer.Designer.cs">
-      <DependentUpon>ParseTreeViewer.cs</DependentUpon>
-      <SubType>UserControl</SubType>
-    </Compile>
+    
     <Compile Include="MipsCodeViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MipsCodeViewer.Designer.cs">
-      <DependentUpon>MipsCodeViewer.cs</DependentUpon>
-      <SubType>UserControl</SubType>
-    </Compile>
+    
     <Compile Include="CompilerInterface.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainWindow.resx">
