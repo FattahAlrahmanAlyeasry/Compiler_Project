@@ -8,10 +8,12 @@ DEBUG_CFLAGS = -g -O0 -DDEBUG
 RELEASE_CFLAGS = -O2 -DNDEBUG
 LDFLAGS = -lm
 TARGET = arabic_compiler
+CLI = arabic_compiler_cli
 LIBRARY = libarabic_compiler.dll
-SOURCES = main.c lexer.c parser.c ast.c symboltable.c codegen.c semantic.c parsetree.c
+# مبدئياً، نبني فقط main.c لأن التنفيذ الحالي يولّد مخرجات تجريبية
+SOURCES = main.c
 OBJECTS = $(SOURCES:.c=.o)
-HEADERS = lexer.h parser.h ast.h symboltable.h codegen.h semantic.h parsetree.h
+HEADERS = main.h
 
 # الهدف الافتراضي
 all: $(TARGET)
@@ -19,6 +21,10 @@ all: $(TARGET)
 # بناء المترجم التنفيذي
 $(TARGET): $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(TARGET) $(LDFLAGS)
+
+# بناء أداة سطر الأوامر التي تربط مباشرة بدوال main.c
+$(CLI): cli.o $(OBJECTS)
+	$(CC) cli.o $(OBJECTS) -o $(CLI) $(LDFLAGS)
 
 # بناء المكتبة الديناميكية
 library: $(OBJECTS)
@@ -39,6 +45,7 @@ release: $(TARGET)
 # تنظيف الملفات
 clean:
 	rm -f $(OBJECTS) $(TARGET) $(LIBRARY) *.exe
+	rm -f $(CLI) cli.o
 
 # تنظيف شامل
 distclean: clean
