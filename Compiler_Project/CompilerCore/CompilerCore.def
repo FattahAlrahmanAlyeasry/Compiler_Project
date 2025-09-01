@@ -1,0 +1,49 @@
+EXPORTS
+; Compiler initialization and cleanup
+initCompiler
+freeCompiler
+
+; Source code compilation
+compileSourceCode
+
+; Error handling
+getErrorCount
+getErrorMessages
+getLexicalErrors
+getSyntaxErrors
+getSemanticErrors
+
+; Parse tree access
+getParseTree
+exportParseTreeToDot
+exportParseTreeToXML
+exportParseTreeToJSON
+
+; AST access
+getAST
+exportASTToDot
+exportASTToXML
+
+; Symbol table access
+getSymbolTable
+exportSymbolTableToCSV
+
+; MIPS code generation
+getMIPSCode
+saveMIPSCodeToFile
+
+; Variable and procedure information
+getVariableInfo
+getProcedureInfo
+
+; Compiler statistics
+getTokenCount
+getParseTreeNodeCount
+getASTNodeCount
+getSymbolCount
+getMIPSInstructionCount
+
+; Compiler options
+setCompilerOption
+getCompilerOption
+
